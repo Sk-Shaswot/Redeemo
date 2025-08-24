@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redeem Rewards</title>
+  <link rel="stylesheet" href="redeem.css">
+  <script src="app.js"></script>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <a href="mainhome.html" style="text-decoration: none;"><div class="logo">🎁 Reedemo</div></a>
+    <ul>
+      <li><a href="mainhome.html">Home</a></li>
+      <li><a href="mainabout.html">About us</a></li>
+      <li><a href="mainhowtoearn.html">How to Earn</a></li>
+      <li><a href="earn.html">Earn</a></li>
+      <li><a href="redeem.html">Redeem</a></li>
+      <li class="coin-balance">Coins: <span id="nav-coin-balance">0</span></li>
+     <li><a href="#" onclick="logout()">Logout</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Redeem Your Rewards</h2>
+    <div class="grid" id="redeemGrid">
+
+      <!-- Example Card -->
+      <div class="card">
+        <img src="images/roblox.jpg" alt="Roblox">
+        <h3>Roblox Robux – 400 Robux</h3>
+        <p>Cost: 1000 coins</p>
+        <button onclick="redeem(1000, 'Roblox Robux')">Redeem</button>
+      </div>
+
+      <div class="card">
+        <img src="images/spotify.webp" alt="Spotify">
+        <h3>Spotify Premium – 1 Month</h3>
+        <p>Cost: 1200 coins</p>
+        <button onclick="redeem(1200, 'Spotify Premium')">Redeem</button>
+      </div>
+
+      <div class="card">
+        <img src="images/fortnite.webp" alt="Fortnite">
+        <h3>Fortnite – 1000 V-Bucks</h3>
+        <p>Cost: 1500 coins</p>
+        <button onclick="redeem(1500, 'Fortnite V-Bucks')">Redeem</button>
+      </div>
+
+      <div class="card">
+        <img src="images/UC.webp" alt="PUBG UC">
+        <h3>PUBG UC – 325 UC</h3>
+        <p>Cost: 2200 coins</p>
+        <button onclick="redeem(2200, 'PUBG UC')">Redeem</button>
+      </div>
+
+      <div class="card">
+        <img src="images/FF.webp" alt="Free Fire">
+        <h3>Free Fire – 500 Diamonds</h3>
+        <p>Cost: 1800 coins</p>
+        <button onclick="redeem(1800, 'Free Fire Diamonds')">Redeem</button>
+      </div>
+
+      <div class="card">
+        <img src="images/ML.webp" alt="Mobile Legends">
+        <h3>Mobile Legends – 500 Diamonds</h3>
+        <p>Cost: 1800 coins</p>
+        <button onclick="redeem(1800, 'ML Diamonds')">Redeem</button>
+      </div>
+
+       <div class="card">
+        <img src="images/gems.webp" alt="Clash Of Clans">
+        <h3>Clash Of Clans – 400 Gems</h3>
+        <p>Cost: 1500 coins</p>
+        <button onclick="redeem(1500, 'Clash Of Clans Gems')">Redeem</button>
+      </div>
+
+      <div class="card">
+        <img src="images/Gpay.webp" alt="Google Play">
+        <h3>Google Play Gift Card – $5</h3>
+        <p>Cost: 800 coins</p>
+        <button onclick="redeem(800, 'Google Play Gift Card')">Redeem</button>
+      </div>
+
+      <div class="card">
+        <img src="images/itunes.webp" alt="iTunes">
+        <h3>iTunes Gift Card – $5</h3>
+        <p>Cost: 800 coins</p>
+        <button onclick="redeem(800, 'iTunes Gift Card')">Redeem</button>
+      </div>
+
+      <div class="card">
+        <img src="images/paypal.webp" alt="PayPal">
+        <h3>PayPal Cash – $10</h3>
+        <p>Cost: 1500 coins</p>
+        <button onclick="redeem(1500, 'PayPal Cash')">Redeem</button>
+      </div>
+
+      <div class="card">
+        <img src="images/esewa.png" alt="Top-up">
+        <h3>Esewa Top-up – Rs.100</h3>
+        <p>Cost: 1000 coins</p>
+        <button onclick="redeem(1000, 'Esewa Top-up')">Redeem</button>
+      </div>
+
+      <div class="card">
+        <img src="images/axie game.png" alt="Axie Infinity">
+        <h3>Axie Infinity - 100 SLP</h3>
+        <p>Cost: 1200 coins</p>
+        <button onclick="redeem(1200, 'Axie Infinity SLP')">Redeem</button>
+      </div>
+
+      <div class="card">
+        <img src="images/sandbox.jpg" alt="The Sandbox">
+        <h3>The Sandbox - 500 SAND</h3>
+        <p>Cost: 2000 coins</p>
+        <button onclick="redeem(2000, 'The Sandbox SAND')">Redeem</button>
+      </div>
+
+      <div class="card">
+        <img src="images/Illuvium.jpg" alt="Illuvium">
+        <h3>Illuvium - 50 ILV Tokens</h3>
+        <p>Cost: 1500 coins</p>
+        <button onclick="redeem(1500, 'Illuvium ILV Tokens')">Redeem</button>
+      </div>
+
+     <div class="card">
+        <img src="images/Gala Games.png" alt="Gala Games">
+        <h3>Gala Games - 100 GALA Tokens</h3>
+        <p>Cost: 1600 coins</p>
+        <button onclick="redeem(1600, 'Gala Games GALA Tokens')">Redeem</button>
+     </div>
+
+     <div class="card">
+        <img src="images/Decentraland.jpg" alt="Decentraland">
+        <h3>Decentraland - 300 MANA Tokens</h3>
+        <p>Cost: 2200 coins</p>
+        <button onclick="redeem(2200, 'Decentraland MANA Tokens')">Redeem</button>
+     </div>
+
+     <div class="card">
+        <img src="images/amazon.jpg" alt="Amazon Gift Card">
+        <h3>Amazon Gift Card - $10</h3>
+        <p>Cost: 1800 coins</p>
+        <button onclick="redeem(1800, 'Amazon Gift Card')">Redeem</button>
+     </div>
+
+     <div class="card">
+        <img src="images/Steam Gift Card.jpg" alt="Steam Gift Card">
+        <h3>Steam Gift Card - $15</h3>
+        <p>Cost: 2000 coins</p>
+        <button onclick="redeem(2000, 'Steam Gift Card')">Redeem</button>
+     </div>
+
+     <div class="card">
+        <img src="images/eBay Gift Card.jpg" alt="eBay Gift Card">
+        <h3>eBay Gift Card - $10</h3>
+        <p>Cost: 1700 coins</p>
+        <button onclick="redeem(1700, 'eBay Gift Card')">Redeem</button>
+     </div>
+
+     <div class="card">
+        <img src="images/Apple Gift Card.jpg" alt="Apple Gift Card">
+        <h3>Apple Gift Card - $25</h3>
+        <p>Cost: 2500 coins</p>
+        <button onclick="redeem(2500, 'Apple Gift Card')">Redeem</button>
+     </div>
+
+     <div class="card">
+        <img src="images/Charity Donation.png" alt="Charity Donation">
+        <h3>Charity Donation</h3>
+        <p>Cost: 1000 coins</p>
+        <button onclick="redeem(1000, 'Charity Donation')">Redeem</button>
+     </div>
+
+        <div class="card">
+        <img src="images/Food Bank Support.jpg" alt="Food Bank Support">
+        <h3>Food Bank Support</h3>
+        <p>Cost: 1200 coins</p>
+        <button onclick="redeem(1200, 'Food Bank Support')">Redeem</button>
+     </div>
+
+     <div class="card">
+        <img src="images/Environment Fund.png" alt="Environment Fund">
+        <h3>Environment Fund</h3>
+        <p>Cost: 1500 coins</p>
+        <button onclick="redeem(1500, 'Environment Fund')">Redeem</button>
+     </div>
+
+     <div class="card">
+        <img src="images/Education Support.png" alt="Education Support">
+        <h3>Education Support</h3>
+        <p>Cost: 1300 coins</p>
+        <button onclick="redeem(1300, 'Education Support')">Redeem</button>
+     </div>
+
+    </div>
+  </div>
+
+<footer class="footer" role="contentinfo">
+    <div class="footer-content">
+        <p>© 2025 Reedemo. All rights reserved. | <a href="mainfeedback.html">Feedback</a></p>
+        <div class="social-icons" aria-label="Social media links">
+        <a href="#"><img src="images/facebook-svgrepo-com.svg" alt="Facebook"></a>
+        <a href="#"><img src="images/twitter-svgrepo-com.svg" alt="Twitter"></a>
+        <a href="#"><img src="images/instagram-svgrepo-com.svg" alt="Instagram"></a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function logout() {
+  // Clear login information stored in localStorage
+  localStorage.removeItem("loggedIn");
+
+  // Alert user (optional)
+  alert("👋 You have logged out.");
+
+  // Redirect to firstpage.html
+  window.location.href = "firstpage.html";
+}
+</script>
+</body>
+</html>

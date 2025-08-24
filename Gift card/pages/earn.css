@@ -1,0 +1,139 @@
+body { 
+    font-family: 'Segoe UI', sans-serif; 
+    background: #f0f2f5;
+    margin: 0;
+    padding: 0;
+  }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #6c5ce7;
+  padding: 20px 50px;
+}
+.navbar .logo {
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.navbar ul li a:hover {
+  color: #ffeaa7;
+}
+
+.earn-page {
+  padding: 40px;
+  text-align: center;
+}
+.earn-page h1 {
+  margin-bottom: 30px;
+  color: #2d3436;
+}
+.quests-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin: 0px auto;
+  max-width: 900px;
+  gap: 20px;
+}
+.quest-card {
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.quest-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+.quest-card h3 {
+  margin: 10px 0;
+  color: #6c5ce7;
+}
+.quest-card p {
+  font-size: 0.95em;
+  color: #2d3436;
+}
+.reward {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #00b894;
+}
+.quest-card button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  background: #6c5ce7;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.quest-card button:hover {
+  background: #4834d4;
+}
+.quest-card button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+.footer {
+  background-color: #6c5ce7;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #ffeaa7;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer p{
+  color: white;
+}
+
+.footer a:hover,
+.footer a:focus {
+  color: white;
+  outline: none;
+}
+
+.footer .footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer .social-icons {
+  margin-top: 15px;
+}
+
+.footer .social-icons a {
+  display: inline-block;
+  margin: 0 8px;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.footer .social-icons img {
+height: 40px;
+width: 35px;
+}

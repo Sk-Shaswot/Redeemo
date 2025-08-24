@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Reedemo</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="/pages/images/logo.png" alt="Reedemo Logo">
+      <h1>Reedemo</h1>
+    </div>
+    <h2><span>👋</span> Welcome!</h2>
+    <p>Login to access your rewards</p>
+    <form>
+      <div class="input-group">
+        <label>Email address</label>
+        <input type="email" placeholder="you@example.com" required>
+      </div>
+      <div class="input-group">
+        <label>Password</label>
+        <input type="password" placeholder="Enter your password" required>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox"> Remember me</label>
+        <a href="#">Forgot password?</a>
+      </div>
+      <a href="mainhome.html"><button type="submit" class="btn btn-primary">Login</button></a>
+      <div class="or">OR</div>
+      <a href="#"><button type="button" class="btn btn-google">Continue with Google</button></a>
+      <a href="#"><button type="button" class="btn btn-discord">Continue with Discord</button></a>
+      <p class="link">Don’t have an account? <a href="signup.html">Sign Up</a></p>
+    </form>
+  </div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  const form = document.querySelector('form');
+  const emailInput = form.querySelector('input[type="email"]');
+  const passwordInput = form.querySelector('input[type="password"]');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const email = emailInput.value.trim();
+    const password = passwordInput.value.trim();
+
+    if (!validateEmail(email)) {
+      alert('Please enter a valid email address.');
+      emailInput.focus();
+      return;
+    }
+    if (password.length === 0) {
+      alert('Please enter your password.');
+      passwordInput.focus();
+      return;
+    }
+
+    // Simulate successful login for now
+    alert('Login successful!');
+    window.location.href = 'mainhome.html'; // Redirect after login
+  });
+
+  function validateEmail(email) {
+    // Simple email regex validation
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+  }
+});
+
+
+</script>
+</body>
+</html>

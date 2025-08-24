@@ -1,0 +1,128 @@
+body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; margin: 0; padding: 0; }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #6c5ce7;
+  padding: 20px 50px;
+}
+.navbar .logo {
+  font-size: 2em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.navbar ul li a:hover {
+  color: #ffeaa7;
+}
+
+    .feedback-section {
+      max-width: 600px;
+      margin: 100px auto;
+      margin-bottom: 10px;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+    .feedback-section h2 {
+      color: #2d3436;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    form label {
+      display: block;
+      font-weight: 600;
+      color: #2d3436;
+      margin-bottom: 6px;
+      margin-top: 15px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 8px 10px;
+      font-size: 1em;
+      border: 1px solid #dfe6e9;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+    form textarea {
+      resize: vertical;
+    }
+    button[type="submit"] {
+      margin-top: 20px;
+      background: #6c5ce7;
+      color: white;
+      font-weight: bold;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.3s ease;
+    }
+    button[type="submit"]:hover {
+      background: #4834d4;
+      text-decoration: none;
+    }
+    .thankyou-message {
+      text-align: center;
+      color: #00b894;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    /* footer */
+.footer {
+  background-color: #6c5ce7;
+  color: white;
+  padding: 30px 50px;
+  text-align: center;
+  font-size: 14px;
+
+}
+
+.footer a {
+  color: #ffeaa7;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover,
+.footer a:focus {
+  color: white;
+  outline: none;
+}
+
+.footer .footer-content {
+  max-width: 900px;
+  margin: 0px auto;
+}
+
+.footer .social-icons {
+  margin-top: 15px;
+}
+
+.footer .social-icons a {
+  display: inline-block;
+  margin: 0 8px;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.footer .social-icons img {
+height: 40px;
+width: 40px;
+}

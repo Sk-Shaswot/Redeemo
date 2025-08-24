@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Earn - Reedemo</title>
+  <link rel="stylesheet" href="earn.css">
+  <script src="app.js"></script>
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <a href="mainhome.html" style="text-decoration: none;"><div class="logo">🎁 Reedemo</div></a>
+    <ul>
+      <li><a href="mainhome.html">Home</a></li>
+      <li><a href="mainabout.html">About us</a></li>
+      <li><a href="mainhowtoearn.html">How to Earn</a></li>
+      <li><a href="earn.html">Earn</a></li>
+      <li><a href="redeem.html">Redeem</a></li>
+      <li class="coin-balance">Coins: <strong id="nav-coin-balance">0</strong></li>
+     <li><a href="#" onclick="logout()">Logout</a></li>
+    </ul>
+  </nav>
+  <!-- Earn Section -->
+  <main class="earn-page">
+    <h1>Earn Rewards</h1>
+    <div class="quests-grid">
+      <!-- Quest Cards -->
+      <div class="quest-card">
+        <h3>Login Streak</h3>
+        <p>Login 4 days in a row</p>
+        <span class="reward">+200 coins</span>
+        <button onclick="claimQuest(1)" id="quest-1">Claim</button>
+      </div>
+
+      <div class="quest-card">
+        <h3>Complete Tasks</h3>
+        <p>Complete 5 tasks</p>
+        <span class="reward">+250 coins</span>
+        <button onclick="claimQuest(2)" id="quest-2">Claim</button>
+      </div>
+
+      <div class="quest-card">
+        <h3>Invite a Friend</h3>
+        <p>Refer your friend to join</p>
+        <span class="reward">+250 coins</span>
+        <button onclick="claimQuest(3)" id="quest-3">Claim</button>
+      </div>
+
+      <div class="quest-card">
+        <h3>Watch a Video</h3>
+        <p>Watch a short clip</p>
+        <span class="reward">+150 coins</span>
+        <button onclick="claimQuest(4)" id="quest-4">Claim</button>
+      </div>
+
+      <div class="quest-card">
+        <h3>Feedback Form</h3>
+        <p>Submit feedback</p>
+        <span class="reward">+69 coins</span>
+        <button onclick="claimQuest(5)" id="quest-5">Claim</button>
+      </div>
+
+      <div class="quest-card">
+        <h3>Login Streak</h3>
+        <p>Login 7 days in a row</p>
+        <span class="reward">+400 coins</span>
+        <button onclick="claimQuest(6)" id="quest-6">Claim</button>
+      </div>
+
+      <div class="quest-card">
+        <h3>Daily Check-In</h3>
+        <p>Check in today to earn points</p>
+        <span class="reward">+50 coins</span>
+        <button onclick="claimQuest(7)" id="quest-7">Claim</button>
+      </div>
+
+      <div class="quest-card">
+        <h3>Share on Social Media</h3>
+        <p>Share Reedemo on your social networks</p>
+        <span class="reward">+100 coins</span>
+        <button onclick="claimQuest(8)" id="quest-8">Claim</button>
+      </div>
+
+      <div class="quest-card">
+        <h3>Complete Profile</h3>
+        <p>Fill out your profile details</p>
+        <span class="reward">+150 coins</span>
+        <button onclick="claimQuest(9)" id="quest-9">Claim</button>
+      </div>
+
+      <div class="quest-card">
+        <h3>Refer Three Friends</h3>
+        <p>Refer 3 friends to join and earn bonus points</p>
+        <span class="reward">+350 coins</span>
+        <button onclick="claimQuest(10)" id="quest-10">Claim</button>
+      </div>
+
+      <div class="quest-card">
+        <h3>Try New Feature</h3>
+        <p>Use a new feature in the app and give feedback</p>
+        <span class="reward">+180 coins</span>
+        <button onclick="claimQuest(11)" id="quest-11">Claim</button>
+      </div>
+
+      <div class="quest-card">
+        <h3>Read Tutorial</h3>
+        <p>Read one of our tutorials fully</p>
+        <span class="reward">+120 coins</span>
+        <button onclick="claimQuest(12)" id="quest-12">Claim</button>
+      </div>
+
+      <div class="quest-card">
+        <h3>Watch Webinar</h3>
+        <p>Watch a live or recorded webinar</p>
+        <span class="reward">+200 coins</span>
+        <button onclick="claimQuest(13)" id="quest-13">Claim</button>
+      </div>
+
+      <div class="quest-card">
+        <h3>Participate in Poll</h3>
+        <p>Take part in a user poll or survey</p>
+        <span class="reward">+80 coins</span>
+        <button onclick="claimQuest(14)" id="quest-14">Claim</button>
+      </div>
+
+      <div class="quest-card">
+        <h3>Share Feedback on Social</h3>
+        <p>Post your feedback about Reedemo publicly</p>
+        <span class="reward">+150 coins</span>
+        <button onclick="claimQuest(15)" id="quest-15">Claim</button>
+      </div>
+    </div>
+  </main>
+
+<footer class="footer" role="contentinfo">
+    <div class="footer-content">
+        <p>© 2025 Reedemo. All rights reserved. | <a href="mainfeedback.html">Feedback</a></p>
+        <div class="social-icons" aria-label="Social media links">
+          <a href="#"><img src="images/facebook-svgrepo-com.svg" alt="Facebook"></a>
+          <a href="#"><img src="images/twitter-svgrepo-com.svg" alt="Twitter"></a>
+          <a href="#"><img src="images/instagram-svgrepo-com.svg" alt="Instagram"></a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function logout() {
+  // Clear login information stored in localStorage
+  localStorage.removeItem("loggedIn");
+
+  // Alert user (optional)
+  alert("👋 You have logged out.");
+
+  // Redirect to firstpage.html
+  window.location.href = "firstpage.html";
+}
+</script>
+</body>
+</html>

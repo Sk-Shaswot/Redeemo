@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>How to Earn - Reedemo</title>
+  <link rel="stylesheet" href="how-to-earn.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <a href="firstpage.html" style="text-decoration: none;"><div class="logo">🎁 Reedemo</div></a>
+    <ul>
+      <li><a href="firstpage.html">Home</a></li>
+      <li><a href="about.html">About us</a></li>
+    </ul>
+   </nav>
+  <main>
+    <h1>How to Earn Points on Reedemo</h1>
+    <p>Reedemo offers multiple ways to earn points that you can redeem for exciting rewards. Here's how you can maximize your earnings:</p>
+
+    <h2>Ways to Earn</h2>
+    <ul>
+      <li><strong>Complete Quests:</strong> Participate in daily or weekly quests like logging in consecutively, finishing tasks, or submitting feedback.</li>
+      <li><strong>Invite Friends:</strong> Get bonus points for every friend you refer who joins the platform.</li>
+      <li><strong>Watch Videos:</strong> Earn points by watching short promotional videos.</li>
+      <li><strong>Submit Feedback:</strong> Help us improve Reedemo and earn points by providing your valuable feedback.</li>
+    </ul>
+
+    <div class="quest">
+      <img src="/pages/images/howtoearn complete quest.png" alt="">
+      <img src="/pages/images/invite quest.png" alt="">
+      <img src="/pages/images/watch vid.png" alt="">
+      <img src="/pages/images/feedback.png" alt="">
+    </div>
+    
+    <h2>Tracking Your Progress</h2>
+    <p>Visit the <a href="secondpage.html">Earn</a> page to view quests available to you and claim rewards.</p>
+
+    <h2>Redeeming Points</h2>
+    <p>Once you gather enough points, you can redeem them for great rewards on the <a href="secondpage.html">Redeem</a> page.</p>
+  </main>
+
+   <footer class="footer" role="contentinfo">
+    <div class="footer-content">
+        <p>© 2025 Reedemo. All rights reserved. | <a href="feedback.html">Feedback</a></p>
+        <div class="social-icons" aria-label="Social media links">
+        <a href="#"><img src="images/facebook-svgrepo-com.svg" alt="Facebook"></a>
+        <a href="#"><img src="images/twitter-svgrepo-com.svg" alt="Twitter"></a>
+        <a href="#"><img src="images/instagram-svgrepo-com.svg" alt="Instagram"></a>
+        </div>
+    </div>
+    </footer>
+  <script>
+    // Same login/logout script as above
+    document.addEventListener("DOMContentLoaded", () => {
+      const loggedIn = localStorage.getItem("loggedIn");
+      if (loggedIn) {
+        document.getElementById("loginLink").style.display = "none";
+        document.getElementById("signupLink").style.display = "none";
+        document.getElementById("logoutLink").style.display = "inline-block";
+      }
+    });
+    function logout() {
+      localStorage.removeItem("loggedIn");
+      alert("👋 You have logged out.");
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
