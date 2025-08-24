@@ -1,0 +1,143 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a0845); /* dark blue → purple */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 30px 40px;
+  width: 500px;
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logo img {
+  width: 70px;
+  height: 45px;
+
+}
+
+.logo h1 {
+  font-size: 22px;
+  color: #2a0845; /* purple text */
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+h2 span {
+  font-size: 22px;
+}
+
+p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: #6c4fc7; /* purple focus */
+}
+
+.checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin: 10px 0;
+  color: #555;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.btn-primary {
+  background: #6c4fc7; /* purple */
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #5637a8;
+}
+
+.btn-google {
+  background: #fff;
+  border: 1px solid #ccc;
+  color: #444;
+}
+
+.btn-discord {
+  background: #5865f2;
+  color: white;
+}
+
+.or {
+  margin: 15px 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.link {
+  font-size: 13px;
+  color: #444;
+  margin-top: 15px;
+}
+
+.link a {
+  color: #6c4fc7;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,133 @@
+ body { font-family: 'Segoe UI', sans-serif; background: #f0f2f5; margin: 0; padding: 0; }
+   /* Navbar */
+    .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #6c5ce7;
+  padding: 20px 50px;
+}
+.navbar .logo {
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.navbar ul li a:hover {
+  color: #ffeaa7;
+}
+
+/* Hero Section */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 70%;
+      margin: 0.5px auto;
+      padding: 60px 8%;
+      gap: 40px;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .hero-text h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .hero-text p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-bottom: 28px;
+      margin-left: 20%;
+      color: #555;
+    }
+
+    .hero-text .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      margin: 10px auto;
+      background: #5a2bdc;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: 0.3s;
+      text-align: center;
+    }
+
+    .hero-text .btn:hover {
+      background: #4a1ac6;
+    }
+
+    .hero-img{
+        display: flex;
+        width: 500px;
+        height: 60vh;
+
+    }
+
+    .btns{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+/* footer */
+.footer {
+  background-color: #6c5ce7;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #ffeaa7;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover,
+.footer a:focus {
+  color: white;
+  outline: none;
+}
+
+.footer .footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footer .social-icons {
+  margin-top: 15px;
+}
+
+.footer .social-icons a {
+  display: inline-block;
+  margin: 0 8px;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.footer .social-icons img {
+height: 40px;
+width: 35px;
+}

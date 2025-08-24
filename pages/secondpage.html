@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gift Card Portal</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a0845); /* dark blue → purple */
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      width: 450px;
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .logo img {
+      width: 60px;   /* adjust size */
+      height: 40px;
+      margin-left: 10px;
+    }
+
+    .container h1 {
+      margin-bottom: 20px;
+      color: #2a0845; /* purple heading */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container p {
+      margin-bottom: 25px;
+      font-size: 15px;
+      color: #666; /* grey text */
+    }
+
+    .btn {
+      display: block;
+      width: 60%;
+      text-align: center;
+      padding: 12px;
+      margin: 10px auto;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: transform 0.2s, background 0.3s;
+    }
+
+    .btn-login {
+      background: #1e3c72; /* dark blue */
+      color: white;
+    }
+
+    .btn-login:hover {
+      background: #16294d;
+      transform: scale(1.05);
+    }
+
+    .btn-signup {
+      background: #2a0845; /* purple */
+      color: white;
+    }
+
+    .btn-signup:hover {
+      background: #1a042b;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <h1>Welcome to <img src="/pages/images/logo.png" alt="GiftCard Logo">Redeemo</h1>
+    </div>
+    <p>Choose an option below to continue</p>
+    <button class="btn btn-login" onclick="location.href='login.html'">Login</button>
+    <button class="btn btn-signup" onclick="location.href='signup.html'">Sign Up</button>
+  </div>
+</body>
+</html>

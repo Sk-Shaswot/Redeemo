@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reedemo - Home</title>
+  <link rel="stylesheet" href="mainabout.css">
+</head>
+<body>
+   <nav class="navbar" id="navbar">
+    <a href="mainhome.html" style="text-decoration: none;"><div class="logo">🎁 Reedemo</div></a>
+    <ul>
+      <li><a href="mainhome.html">Home</a></li>
+      <li><a href="mainabout.html">About us</a></li>
+      <li><a href="mainhowtoearn.html">How to Earn</a></li>
+      <li><a href="earn.html">Earn</a></li>
+      <li><a href="redeem.html">Redeem</a></li>
+     <li><a href="#" onclick="logout()">Logout</a></li>
+    </ul>
+  </nav>
+  <section class="page-header">
+    <div class="aboutt">
+      <h1>About Reedemo</h1>
+      <p>Your trusted reward platform that turns everyday actions into exciting benefits.</p>
+    </div>
+    <img src="/pages/images/about us.png" alt="">
+  </section>
+
+  <section class="about-section">
+    <h2>🌟 Our Mission</h2>
+    <p>
+      At <strong>Reedemo</strong>, we believe everyone deserves rewards for their engagement. 
+      Whether it’s learning, completing quests, or participating in fun challenges — 
+      our mission is to make the journey as rewarding as the destination.
+    </p>
+  </section>
+
+  <section class="about-section">
+    <h2>🚀 How We Work</h2>
+    <p>
+      We partner with brands, creators, and communities to bring you opportunities 
+      to <strong>earn points</strong>. These points can be redeemed for exclusive gifts, vouchers, 
+      and surprises that add real value to your life. Our simple and fun quests ensure 
+      that earning is never boring.
+    </p>
+  </section>
+
+  <section class="about-section">
+    <h2>🤝 Why Choose Us</h2>
+    <ul>
+      <li>✅ Easy to use and beginner-friendly.</li>
+      <li>✅ Transparent reward system.</li>
+      <li>✅ Exciting challenges updated regularly.</li>
+      <li>✅ A community-driven platform you can trust.</li>
+    </ul>
+  </section>
+
+  <section class="about-section">
+    <h2>📩 Get in Touch</h2>
+    <p>
+      Have questions or feedback? Reach out to us anytime! We’re constantly improving 
+      Reedemo with our users’ input in mind. Together, let’s make rewards more fun, 
+      engaging, and meaningful.
+    </p>
+  </section>
+    
+
+ <footer class="footer" role="contentinfo">
+    <div class="footer-content">
+        <p>© 2025 Reedemo. All rights reserved. | <a href="mainfeedback.html">Feedback</a></p>
+        <div class="social-icons" aria-label="Social media links">
+        <a href="#"><img src="images/facebook-svgrepo-com.svg" alt="Facebook"></a>
+        <a href="#"><img src="images/twitter-svgrepo-com.svg" alt="Twitter"></a>
+        <a href="#"><img src="images/instagram-svgrepo-com.svg" alt="Instagram"></a>
+        </div>
+    </div>
+  </footer>
+<script>
+    function logout() {
+  // Clear login information stored in localStorage
+  localStorage.removeItem("loggedIn");
+
+  // Alert user (optional)
+  alert("👋 You have logged out.");
+
+  // Redirect to firstpage.html
+  window.location.href = "firstpage.html";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Feedback - Reedemo</title>
+  <link rel="stylesheet" href="feedback.css" />
+</head>
+<body>
+  <!-- Navbar for consistency -->
+  <nav class="navbar" id="navbar">
+    <a href="mainhome.html" style="text-decoration: none;"><div class="logo">🎁 Reedemo</div></a>
+    <ul>
+      <li><a href="mainhome.html">Home</a></li>
+      <li><a href="mainabout.html">About us</a></li>
+      <li><a href="mainhowtoearn.html">How to Earn</a></li>
+      <li><a href="earn.html">Earn</a></li>
+      <li><a href="redeem.html">Redeem</a></li>
+     <li><a href="#" onclick="logout()">Logout</a></li>
+    </ul>
+  </nav>
+
+  <main class="feedback-section" role="main">
+    <h2>📋 Feedback Form</h2>
+    <form id="feedbackForm" aria-describedby="formInstructions" novalidate>
+      <p id="formInstructions">Please provide your feedback to help us improve Reedemo.</p>
+
+      <label for="name">Name<span aria-hidden="true" style="color:red;"> *</span></label>
+      <input type="text" id="name" name="name" aria-required="true" required placeholder="Your name" />
+
+      <label for="email">Email<span aria-hidden="true" style="color:red;"> *</span></label>
+      <input type="email" id="email" name="email" aria-required="true" required placeholder="you@example.com" />
+
+      <label for="comments">Comments<span aria-hidden="true" style="color:red;"> *</span></label>
+      <textarea id="comments" name="comments" rows="5" aria-required="true" required placeholder="Your feedback here..."></textarea>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+    <div id="thankyou" class="thankyou-message" role="alert" aria-live="polite" style="display:none;">
+      Thank you for your feedback! 🎉
+    </div>
+  </main>
+  
+  
+ 
+ <footer class="footer" role="contentinfo">
+    <div class="footer-content">
+        <p>© 2025 Reedemo. All rights reserved. | <a href="mainfeedback.html">Feedback</a></p>
+        <div class="social-icons" aria-label="Social media links">
+        <a href="#"><img src="images/facebook-svgrepo-com.svg" alt="Facebook"></a>
+        <a href="#"><img src="images/twitter-svgrepo-com.svg" alt="Twitter"></a>
+        <a href="#"><img src="images/instagram-svgrepo-com.svg" alt="Instagram"></a>
+        </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const name = this.name.value.trim();
+      const email = this.email.value.trim();
+      const comments = this.comments.value.trim();
+
+      if (!name || !email || !comments) {
+        alert("Please fill out all required fields.");
+        return;
+      }
+
+      let feedbackList = JSON.parse(localStorage.getItem("feedbackList") || "[]");
+      feedbackList.push({ name, email, comments, date: new Date().toISOString() });
+      localStorage.setItem("feedbackList", JSON.stringify(feedbackList));
+
+      this.reset();
+      document.getElementById("thankyou").style.display = "block";
+
+      setTimeout(() => {
+        document.getElementById("thankyou").style.display = "none";
+      }, 5000);
+    });
+  </script>
+</body>
+</html>
